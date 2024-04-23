@@ -15,7 +15,7 @@ function PlantItem({name, cover, id, isSpecialOffer, light, water}) {
             <img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
             {name}
             <div>
-                {isSpecialOffer && <div className='lmj-sales'>Soldes</div>}
+                {isSpecialOffer && <span className='lmj-sales'>Soldes</span>}
                 <CareScale careType='water' scaleValue={water}/>
                 <CareScale careType='light' scaleValue={light}/>
             </div>
